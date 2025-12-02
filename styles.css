@@ -78,88 +78,63 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #f8fafc 0%, #eef5ff 100%);
-    padding: 6rem 0;
-    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 60px;
+    background: linear-gradient(to bottom right, #f8fafc, #eef5ff);
     position: relative;
+    overflow: hidden;
 }
 
 .hero-content {
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-    position: relative;
-    min-height: 500px;
+    max-width: 500px;
 }
 
-.hero-text {
-    flex: 0 0 50%;
-    max-width: 550px;
-    z-index: 2;
-}
-
-.hero-title {
+.hero h1 {
     font-family: 'Quicksand', sans-serif;
-    font-size: 3rem;
     font-weight: 700;
-    color: var(--text-dark);
-    margin-bottom: 1rem;
+    font-size: 48px;
     line-height: 1.2;
+    color: #1a1a1a;
+    margin-bottom: 20px;
 }
 
-.hero-subheadline {
+.hero p {
     font-family: 'Quicksand', sans-serif;
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: var(--text-gray);
-    margin-bottom: 1.5rem;
-    line-height: 1.6;
+    font-weight: 500;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
 }
 
-.hero-mascot {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    position: relative;
-    z-index: 1;
-    overflow: visible;
-}
-
-.mascot-img {
-    width: 45%;
-    max-width: 600px;
-    height: auto;
-    object-fit: contain;
-    transform: translateX(12%);
-    max-height: 700px;
-    background: none;
-    padding: 0;
-}
-
-.hero-text .hero-cta,
-.hero-cta {
+.hero-btn {
     display: inline-block;
     padding: 14px 24px;
+    border: 2px solid #1E4FA8;
+    color: #1E4FA8;
     border-radius: 8px;
     text-decoration: none;
     font-family: 'Quicksand', sans-serif;
     font-weight: 600;
-    font-size: 1rem;
-    background-color: var(--white);
-    color: #1E4FA8;
-    border: 2px solid #1E4FA8;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    box-shadow: none;
+    transition: 0.2s;
 }
 
-.hero-text .hero-cta:hover,
-.hero-cta:hover {
-    border-color: #1a3d8a;
-    color: #1a3d8a;
-    transform: translateY(-1px);
-    background-color: var(--white);
+.hero-btn:hover {
+    color: #163d82;
+    border-color: #163d82;
+}
+
+.hero-mascot-wrapper {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.hero-mascot {
+    width: 420px; /* make the mascot large */
+    position: relative;
+    right: -60px; /* overlap right edge */
+    top: 20px;
 }
 
 /* Buttons */
@@ -626,50 +601,21 @@ section {
 }
 
 /* Responsive Design */
-@media (max-width: 1024px) {
-    .mascot-img {
-        width: 45%;
-        max-width: 450px;
-        transform: translateX(10%);
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    .hero-mascot {
+        width: 300px;
+        right: 0;
+        margin-top: 40px;
     }
 }
 
 @media (max-width: 768px) {
-    .hero-content {
-        flex-direction: column;
-        gap: 2.5rem;
-        min-height: auto;
-        text-align: center;
-    }
-
-    .hero-text {
-        flex: 1;
-        max-width: 100%;
-        text-align: center;
-    }
-
-    .hero-title {
-        font-size: 2.2rem;
-        margin-bottom: 0.75rem;
-    }
-
-    .hero-subheadline {
-        font-size: 1.1rem;
-        margin-bottom: 1.25rem;
-    }
-
-    .hero-mascot {
-        justify-content: center;
-        width: 100%;
-        overflow: visible;
-    }
-
-    .mascot-img {
-        width: 60%;
-        max-width: 350px;
-        transform: translateX(0);
-        margin: 0 auto;
-    }
 
     .section-title {
         font-size: 2rem;
@@ -705,34 +651,6 @@ section {
 }
 
 @media (max-width: 480px) {
-    .hero {
-        padding: 4rem 0;
-    }
-
-    .hero-content {
-        gap: 2rem;
-    }
-
-    .hero-title {
-        font-size: 1.75rem;
-        margin-bottom: 0.75rem;
-    }
-
-    .hero-subheadline {
-        font-size: 1rem;
-        margin-bottom: 1.25rem;
-    }
-
-    .hero-mascot {
-        overflow: visible;
-    }
-
-    .mascot-img {
-        width: 65%;
-        max-width: 280px;
-        transform: translateX(0);
-    }
-
     .brand-name {
         font-size: 20px;
     }
