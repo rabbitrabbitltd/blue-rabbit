@@ -83,8 +83,19 @@ body {
     font-family: 'Inter', sans-serif;
     font-weight: 800;
     font-size: 42px;
-    color: var(--text-dark);
+    color: var(--blue);
     margin-bottom: 2rem;
+    text-align: center;
+}
+
+.subheading {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--text-dark);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: left;
 }
 
 .section-intro {
@@ -305,12 +316,6 @@ body {
     line-height: 1.7;
 }
 
-.steps-footer {
-    text-align: center;
-    font-size: 16px;
-    color: var(--text-gray);
-    margin-top: 2rem;
-}
 
 /* Column Content Paragraphs */
 .column-content p {
@@ -377,12 +382,30 @@ body {
     font-style: italic;
 }
 
-.future-vision {
-    font-size: 16px;
-    color: var(--text-dark);
-    font-weight: 600;
+/* Highlight Card Component */
+.highlight-card {
+    background-color: #F3F7FF;
+    border-radius: 16px;
+    padding: 16px;
     margin-top: 2rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.highlight-card .spark-icon {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+}
+
+.highlight-card p {
+    font-size: 18px;
+    color: var(--text-dark);
     line-height: 1.7;
+    margin: 0;
+    font-weight: 500;
 }
 
 /* Pricing Grid */
