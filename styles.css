@@ -78,7 +78,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #FAFBFC 0%, #F0F4F8 100%);
+    background: linear-gradient(135deg, #f8fafc 0%, #eef5ff 100%);
     padding: 6rem 0;
     overflow: hidden;
     position: relative;
@@ -87,14 +87,14 @@ body {
 .hero-content {
     display: flex;
     align-items: center;
-    gap: 4rem;
+    gap: 3rem;
     position: relative;
     min-height: 500px;
 }
 
 .hero-text {
-    flex: 1;
-    max-width: 600px;
+    flex: 0 0 50%;
+    max-width: 550px;
     z-index: 2;
 }
 
@@ -103,16 +103,16 @@ body {
     font-size: 3rem;
     font-weight: 700;
     color: var(--text-dark);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     line-height: 1.2;
 }
 
 .hero-subheadline {
     font-family: 'Quicksand', sans-serif;
     font-size: 1.3rem;
-    font-weight: 400;
+    font-weight: 600;
     color: var(--text-gray);
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
     line-height: 1.6;
 }
 
@@ -123,22 +123,25 @@ body {
     justify-content: flex-end;
     position: relative;
     z-index: 1;
+    overflow: visible;
 }
 
 .mascot-img {
-    width: 50%;
-    max-width: 500px;
+    width: 45%;
+    max-width: 600px;
     height: auto;
     object-fit: contain;
     transform: translateX(12%);
-    max-height: 600px;
+    max-height: 700px;
+    background: none;
+    padding: 0;
 }
 
 .hero-text .hero-cta,
 .hero-cta {
     display: inline-block;
     padding: 14px 24px;
-    border-radius: 7px;
+    border-radius: 8px;
     text-decoration: none;
     font-family: 'Quicksand', sans-serif;
     font-weight: 600;
@@ -634,33 +637,38 @@ section {
 @media (max-width: 768px) {
     .hero-content {
         flex-direction: column;
-        gap: 3rem;
+        gap: 2.5rem;
         min-height: auto;
         text-align: center;
     }
 
     .hero-text {
+        flex: 1;
         max-width: 100%;
         text-align: center;
     }
 
     .hero-title {
         font-size: 2.2rem;
+        margin-bottom: 0.75rem;
     }
 
     .hero-subheadline {
         font-size: 1.1rem;
+        margin-bottom: 1.25rem;
     }
 
     .hero-mascot {
         justify-content: center;
         width: 100%;
+        overflow: visible;
     }
 
     .mascot-img {
-        width: 70%;
-        max-width: 400px;
+        width: 60%;
+        max-width: 350px;
         transform: translateX(0);
+        margin: 0 auto;
     }
 
     .section-title {
@@ -707,15 +715,22 @@ section {
 
     .hero-title {
         font-size: 1.75rem;
+        margin-bottom: 0.75rem;
     }
 
     .hero-subheadline {
         font-size: 1rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .hero-mascot {
+        overflow: visible;
     }
 
     .mascot-img {
-        width: 80%;
-        max-width: 300px;
+        width: 65%;
+        max-width: 280px;
+        transform: translateX(0);
     }
 
     .brand-name {
