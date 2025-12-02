@@ -125,15 +125,13 @@ body {
 
 .hero-mascot {
     position: absolute;
-    left: 560px; /* 80px padding + 580px text width - 100px overlap = mascot overlaps text container */
+    right: -50px;
     top: calc(50% + 50px);
     transform: translateY(-50%);
     width: 470px;
-    max-width: none;
     height: auto;
     pointer-events: none;
-    z-index: 1; /* Behind text (z-index: 2) */
-    opacity: 1;
+    z-index: 1;
     object-fit: contain;
     filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
 }
@@ -605,8 +603,7 @@ section {
 @media (min-width: 1400px) {
     .hero-mascot {
         width: 550px;
-        left: 640px; /* Adjust overlap for larger mascot on big screens */
-        top: calc(50% + 50px);
+        right: -30px;
     }
 }
 
