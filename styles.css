@@ -224,14 +224,60 @@ section {
     margin-right: auto;
 }
 
+/* Audience Section */
+.audience-section {
+    background-color: #f8fafc;
+}
+
+.audience-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.audience-card {
+    background-color: var(--white);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.audience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+}
+
+.audience-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+.audience-card h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--dark-blue);
+    margin-bottom: 1rem;
+}
+
+.audience-card p {
+    color: var(--text-gray);
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
 /* Gallery Section */
 .gallery-section {
-    background-color: var(--light-gray);
+    background-color: var(--white);
 }
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin-top: 3rem;
 }
@@ -286,18 +332,18 @@ section {
 
 /* Benefits Section */
 .benefits-section {
-    background-color: var(--white);
+    background: linear-gradient(to bottom right, #f8fafc, #eef5ff);
 }
 
 .benefits-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin-top: 3rem;
 }
 
 .benefit-card {
-    background-color: var(--light-blue);
+    background-color: var(--white);
     padding: 2.5rem;
     border-radius: 12px;
     text-align: center;
@@ -305,11 +351,12 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 .benefit-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 25px var(--shadow);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
 }
 
 .benefit-icon {
@@ -319,95 +366,53 @@ section {
 }
 
 .benefit-card h3 {
+    font-family: 'Quicksand', sans-serif;
     font-size: 1.3rem;
     color: var(--dark-blue);
     margin-bottom: 1rem;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .benefit-card p {
     color: var(--text-gray);
     line-height: 1.7;
+    font-size: 1rem;
 }
 
 /* Pricing Section */
 .pricing-section {
-    background: linear-gradient(135deg, var(--light-blue) 0%, var(--white) 100%);
-}
-
-.promo-banner {
-    background: linear-gradient(135deg, var(--dark-blue) 0%, var(--blue) 100%);
-    color: var(--white);
-    padding: 1.5rem;
-    border-radius: 12px;
-    text-align: center;
-    margin-bottom: 3rem;
-    box-shadow: 0 4px 15px rgba(30, 79, 168, 0.3);
-}
-
-.promo-badge {
-    display: inline-block;
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
-
-.promo-text {
-    font-size: 1.3rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-}
-
-.promo-note {
-    font-size: 0.95rem;
-    opacity: 0.9;
-    margin-top: 0.75rem;
-    line-height: 1.5;
+    background-color: var(--white);
 }
 
 .pricing-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
     margin-top: 3rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .pricing-card {
     background-color: var(--white);
     padding: 2.5rem;
     border-radius: 12px;
-    box-shadow: 0 4px 15px var(--shadow);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
     text-align: center;
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
 }
 
 .pricing-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 25px var(--shadow-hover);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
 }
 
 .pricing-card.featured {
-    border: 3px solid var(--dark-blue);
-    transform: scale(1.05);
-}
-
-.pricing-card.featured:hover {
-    transform: scale(1.05) translateY(-5px);
-}
-
-.popular-badge {
-    position: absolute;
-    top: -12px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: var(--dark-blue);
-    color: var(--white);
-    padding: 0.4rem 1.2rem;
-    border-radius: 20px;
-    font-weight: 500;
-    font-size: 0.85rem;
-    letter-spacing: 0.3px;
+    border: 2px solid var(--dark-blue);
+    box-shadow: 0 4px 15px rgba(30, 79, 168, 0.15);
 }
 
 .package-name {
@@ -442,14 +447,15 @@ section {
     list-style: none;
     text-align: left;
     margin-bottom: 2rem;
-    min-height: 200px;
+    padding: 0;
 }
 
 .package-features li {
     padding: 0.75rem 0;
     color: var(--text-dark);
-    font-size: 1.1rem;
-    border-bottom: 1px solid var(--light-gray);
+    font-size: 1rem;
+    line-height: 1.6;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .package-features li:last-child {
@@ -501,14 +507,6 @@ section {
     font-size: 1.1rem;
 }
 
-.workflow-reassurance {
-    text-align: center;
-    color: var(--text-gray);
-    font-size: 0.95rem;
-    margin-top: 2rem;
-    opacity: 0.75;
-    font-style: italic;
-}
 
 /* Testimonials Section */
 .testimonials-section {
@@ -556,38 +554,36 @@ section {
 
 /* CTA Section */
 .cta-section {
-    background: linear-gradient(135deg, var(--dark-blue) 0%, var(--blue) 100%);
-    color: var(--white);
+    background: linear-gradient(to bottom right, #eef5ff, #f0f7ff);
     text-align: center;
     padding: 6rem 0;
 }
 
+.cta-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
 .cta-title {
+    font-family: 'Quicksand', sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    color: var(--white);
+    color: var(--dark-blue);
 }
 
 .cta-description {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 2.5rem;
-    opacity: 0.95;
+    color: var(--text-gray);
+    line-height: 1.7;
 }
 
 .cta-note {
     margin-top: 1.5rem;
     font-size: 0.95rem;
+    color: var(--text-gray);
     opacity: 0.8;
-}
-
-.cta-section .cta-button.primary {
-    background-color: var(--white);
-    color: var(--dark-blue);
-}
-
-.cta-section .cta-button.primary:hover {
-    background-color: var(--light-blue);
 }
 
 /* Footer */
@@ -690,10 +686,24 @@ section {
         gap: 2rem;
     }
 
-    .gallery-grid,
-    .benefits-grid,
-    .pricing-grid,
-    .testimonials-grid {
+    .audience-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+
+    .workflow-steps {
         grid-template-columns: 1fr;
     }
 }
