@@ -197,6 +197,10 @@ body {
     object-fit: contain;
 }
 
+.mascot-small {
+    max-width: 260px;
+}
+
 /* Card Styles */
 .card {
     background-color: var(--white);
