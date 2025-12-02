@@ -7,10 +7,10 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/br-logo-final cropped.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/br-logo-final cropped.png">
     <link rel="apple-touch-icon" href="images/br-logo-final cropped.png">
-    <link rel="stylesheet" href="styles.css?v=8">
+    <link rel="stylesheet" href="styles.css?v=9">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -29,16 +29,18 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1>Upgrade Your Listing. Increase Your Bookings.</h1>
-                <p class="hero-subheadline">Most holiday rentals underperform because their photos do not create enough trust or desire. We professionally enhance your existing images so your property looks bright, clean, inviting, and worth a higher nightly rate without needing new photography.</p>
-                <a class="hero-btn" href="#upload">Get a Free Sample Upgrade</a>
-                <p class="hero-supporting">Show us one photo. We will upgrade it for free so you can see the difference before committing.</p>
-                <img src="images/br-rabbit-mobile.png" alt="Blue Rabbit Mascot" class="hero-mascot-mobile">
-            </div>
-            <div class="hero-visual">
-                <img src="images/br-rabbit-desktop.png" alt="Blue Rabbit Mascot" class="hero-mascot-desktop">
+        <div class="container">
+            <div class="hero-wrapper">
+                <div class="hero-content">
+                    <h1>Upgrade Your Listing. Increase Your Bookings.</h1>
+                    <p class="hero-text">Most holiday rentals underperform because their photos do not create enough trust or desire. We professionally enhance your existing images so your property looks bright, clean, inviting, and high-quality — without needing new photography.</p>
+                    <a href="#upload" class="cta-button">Get a Free Sample Upgrade</a>
+                    <p class="hero-reassurance">Show us one photo. We will upgrade it for free so you can see the difference before committing.</p>
+                </div>
+                <div class="hero-image">
+                    <img src="images/br-rabbit-desktop.png" alt="Blue Rabbit Mascot" class="hero-mascot-desktop">
+                    <img src="images/br-rabbit-mobile.png" alt="Blue Rabbit Mascot" class="hero-mascot-mobile">
+                </div>
             </div>
         </div>
     </section>
@@ -46,31 +48,19 @@
     <!-- Who We Help Section -->
     <section id="who-we-help" class="section">
         <div class="container">
-            <h2 class="section-title">Who We Help</h2>
-            <div class="audience-grid">
+            <h2 class="section-heading">Who We Help</h2>
+            <div class="cards-grid">
                 <div class="card">
-                    <svg class="icon-svg" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20 10L25 15H22.5V25H17.5V15H15L20 10Z" stroke="#1E4FA8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M10 30V20H30V30" stroke="#1E4FA8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
                     <h3>Airbnb Hosts</h3>
                     <p>Airbnb is a visual marketplace. Guests scroll fast, and listings with clean, bright, well-balanced images consistently outperform darker or cluttered ones. Better photography is one of the most effective ways to increase bookings.</p>
                 </div>
                 <div class="card">
-                    <svg class="icon-svg" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20 10L25 15H22.5V25H17.5V15H15L20 10Z" stroke="#1E4FA8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M10 30V20H30V30" stroke="#1E4FA8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
                     <h3>Cottage Owners</h3>
-                    <p>Many cottage owners rely on their own websites or repeat guests. Enhanced photos immediately elevate the perceived quality of the stay, making your property feel warmer, more spacious, and more premium.</p>
+                    <p>Many cottage owners rely on their own websites or repeat guests. Enhanced photos immediately elevate perceived quality, making your property feel warmer, more spacious, and more premium.</p>
                 </div>
                 <div class="card">
-                    <svg class="icon-svg" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20 10L25 15H22.5V25H17.5V15H15L20 10Z" stroke="#1E4FA8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M10 30V20H30V30" stroke="#1E4FA8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
                     <h3>STR Managers</h3>
-                    <p>Managing multiple properties means consistency is essential. We help standardise the visual style across your entire portfolio without the cost or delays of scheduling photographers.</p>
+                    <p>Managing multiple properties means consistency is essential. We help standardise the visual style across your portfolio without the cost or delays of scheduling photographers.</p>
                 </div>
             </div>
         </div>
@@ -79,44 +69,34 @@
     <!-- Why Better Photos Matter Section -->
     <section id="why-photos-matter" class="section">
         <div class="container">
-            <h2 class="section-title">Why Better Photos Matter</h2>
-            <div class="benefits-grid">
-                <div class="card">
-                    <svg class="icon-svg" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="20" cy="20" r="15" stroke="#1E4FA8" stroke-width="2"/>
-                        <path d="M20 12V20L26 24" stroke="#1E4FA8" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
-                    <h3>Visibility</h3>
-                    <p>Listings with bright, high-clarity photos attract significantly more clicks because they stand out in crowded search results.</p>
+            <div class="section-with-image">
+                <div class="section-content">
+                    <h2 class="section-heading">Why Better Photos Matter</h2>
+                    <div class="cards-grid">
+                        <div class="card">
+                            <h3>Visibility</h3>
+                            <p>Listings with bright, high-clarity photos attract significantly more clicks because they stand out in crowded search results.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Trust</h3>
+                            <p>Improved lighting, colour correction, and removal of distractions increase perceived cleanliness and professionalism, which leads directly to more bookings.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Booking Rate</h3>
+                            <p>Better photos convert more browsers into guests. Small improvements can increase booking rates by 20 to 40 percent.</p>
+                        </div>
+                    </div>
+                    <div class="text-block">
+                        <p>Dark or dull images make rooms feel smaller.</p>
+                        <p>Warm orange lighting makes spaces look dated.</p>
+                        <p>Clutter or visible cables reduce guest confidence.</p>
+                        <p>Uneven lighting creates distrust.</p>
+                        <p>Every time a guest scrolls past your listing, you lose potential revenue.</p>
+                    </div>
                 </div>
-                <div class="card">
-                    <svg class="icon-svg" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20 10L24 18L32 20L24 22L20 30L16 22L8 20L16 18L20 10Z" stroke="#1E4FA8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <h3>Trust</h3>
-                    <p>Improved lighting, colour correction, and removal of distractions increase perceived cleanliness and professionalism, which leads directly to more bookings.</p>
+                <div class="section-image">
+                    <img src="images/br-rabbit-camera.png" alt="Blue Rabbit with Camera" class="mascot-image">
                 </div>
-                <div class="card">
-                    <svg class="icon-svg" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10 20H30M20 10V30" stroke="#1E4FA8" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
-                    <h3>Booking Rate</h3>
-                    <p>Better photos convert more browsers into guests. Small visual improvements can increase booking rate by 20 to 40 percent.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- What Poor Photos Cost You Section -->
-    <section id="poor-photos-cost" class="section">
-        <div class="container">
-            <div class="text-block">
-                <p>Dark or dull images make rooms feel smaller.</p>
-                <p>Warm orange lighting makes spaces look dated.</p>
-                <p>Clutter or cables reduce guest confidence.</p>
-                <p>Uneven lighting creates distrust.</p>
-                <p>Every time a guest scrolls past your listing, you lose potential revenue.</p>
-                <p>Even one lost weekend per month can cost hundreds.</p>
             </div>
         </div>
     </section>
@@ -124,9 +104,34 @@
     <!-- ROI Section -->
     <section id="roi" class="section">
         <div class="container">
-            <h2 class="section-title">Your Return on Investment</h2>
-            <div class="roi-card">
+            <h2 class="section-heading">Your Return on Investment</h2>
+            <div class="text-content">
                 <p>If your nightly rate is around £120, one additional night usually covers the Standard Package. Two extra nights cover the Premium Package. Better photos often increase nightly rates by 10 to 25 percent, significantly boosting annual income.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Upgrade Your Photos Section -->
+    <section id="what-we-do" class="section">
+        <div class="container">
+            <div class="section-with-image reverse">
+                <div class="section-image">
+                    <img src="images/br-rabbit-laptop.png" alt="Blue Rabbit with Laptop" class="mascot-image">
+                </div>
+                <div class="section-content">
+                    <h2 class="section-heading">How We Upgrade Your Photos</h2>
+                    <div class="features-list">
+                        <p>Lighting correction</p>
+                        <p>Colour balancing</p>
+                        <p>Exposure fixes</p>
+                        <p>Window light smoothing</p>
+                        <p>Shadow and glare removal</p>
+                        <p>Straightening and perspective correction</p>
+                        <p>Texture, detail, and clarity enhancement</p>
+                        <p>Tone harmonising across all photos</p>
+                        <p class="clarification">This is not a simple filter. It is a full multi-step enhancement process designed to make every room look its best.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -134,48 +139,23 @@
     <!-- Real Transformations Section -->
     <section id="results" class="section">
         <div class="container">
-            <h2 class="section-title">Real Transformations</h2>
+            <h2 class="section-heading">Real Transformations</h2>
             <div class="transformations-grid">
-                <div class="transformation-item">
-                    <div class="before-image">Before</div>
-                    <svg class="arrow-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M15 10L25 20L15 30" stroke="#1E4FA8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <div class="after-image">After</div>
+                <div class="transformation-pair">
+                    <div class="image-placeholder before">Before</div>
+                    <div class="arrow">></div>
+                    <div class="image-placeholder after">After</div>
                 </div>
-                <div class="transformation-item">
-                    <div class="before-image">Before</div>
-                    <svg class="arrow-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M15 10L25 20L15 30" stroke="#1E4FA8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <div class="after-image">After</div>
+                <div class="transformation-pair">
+                    <div class="image-placeholder before">Before</div>
+                    <div class="arrow">></div>
+                    <div class="image-placeholder after">After</div>
                 </div>
-                <div class="transformation-item">
-                    <div class="before-image">Before</div>
-                    <svg class="arrow-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M15 10L25 20L15 30" stroke="#1E4FA8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <div class="after-image">After</div>
+                <div class="transformation-pair">
+                    <div class="image-placeholder before">Before</div>
+                    <div class="arrow">></div>
+                    <div class="image-placeholder after">After</div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- What We Actually Do Section -->
-    <section id="what-we-do" class="section">
-        <div class="container">
-            <h2 class="section-title">How We Upgrade Your Photos</h2>
-            <div class="features-list">
-                <p>Lighting correction</p>
-                <p>Colour balancing</p>
-                <p>Exposure fixes</p>
-                <p>Window light smoothing</p>
-                <p>Shadow and glare removal</p>
-                <p>Straightening and perspective correction</p>
-                <p>Clutter removal of small distracting items</p>
-                <p>Texture, detail, and clarity enhancement</p>
-                <p>Tone harmonising across all photos</p>
-                <p class="clarification">This is not a simple filter. It is a full multi-step enhancement process designed to make every room look its best.</p>
             </div>
         </div>
     </section>
@@ -183,11 +163,11 @@
     <!-- Pricing Section -->
     <section id="pricing" class="section">
         <div class="container">
-            <h2 class="section-title">Simple, Transparent Pricing</h2>
+            <h2 class="section-heading">Simple, Transparent Pricing</h2>
             <div class="pricing-grid">
                 <div class="pricing-card">
-                    <h3 class="package-name">Standard Package — £279</h3>
-                    <ul class="package-features">
+                    <h3 class="package-title">Standard Package — £279</h3>
+                    <ul class="package-list">
                         <li>10 professionally enhanced photos</li>
                         <li>Lighting, colour, and clarity correction</li>
                         <li>Shadow balancing</li>
@@ -196,13 +176,13 @@
                         <li>Two revision rounds</li>
                         <li>48-hour delivery</li>
                         <li>Suitable for smaller properties</li>
-                        <li class="highlight">One additional night booked often covers the full cost.</li>
                     </ul>
-                    <a href="#upload" class="hero-btn">Choose Standard</a>
+                    <p class="package-footer">One additional night booked often covers the full cost.</p>
+                    <a href="#upload" class="cta-button">Choose Standard</a>
                 </div>
                 <div class="pricing-card featured">
-                    <h3 class="package-name">Premium Package — £349</h3>
-                    <ul class="package-features">
+                    <h3 class="package-title">Premium Package — £349</h3>
+                    <ul class="package-list">
                         <li>15 to 18 enhanced photos</li>
                         <li>Everything in Standard</li>
                         <li>Advanced retouching</li>
@@ -212,7 +192,7 @@
                         <li>Priority delivery</li>
                         <li>Ideal for houses and multi-room rentals</li>
                     </ul>
-                    <a href="#upload" class="hero-btn">Choose Premium</a>
+                    <a href="#upload" class="cta-button">Choose Premium</a>
                 </div>
             </div>
         </div>
@@ -221,8 +201,8 @@
     <!-- How It Works Section -->
     <section id="how-it-works" class="section">
         <div class="container">
-            <h2 class="section-title">How It Works</h2>
-            <div class="workflow-steps">
+            <h2 class="section-heading">How It Works</h2>
+            <div class="steps-grid">
                 <div class="step">
                     <div class="step-number">1</div>
                     <h3>Choose a Package</h3>
@@ -245,10 +225,15 @@
     <!-- Final CTA Section -->
     <section id="upload" class="section cta-section">
         <div class="container">
-            <div class="cta-content">
-                <h2 class="cta-title">Ready to See the Difference?</h2>
-                <p class="cta-description">Get a free upgraded sample photo first. No commitment and no pressure.</p>
-                <a href="#upload" class="hero-btn">Get a Free Sample Upgrade</a>
+            <div class="section-with-image">
+                <div class="section-content">
+                    <h2 class="section-heading">Ready to See the Difference?</h2>
+                    <p class="cta-text">Get a free upgraded sample photo first. No commitment and no pressure.</p>
+                    <a href="#upload" class="cta-button">Get a Free Sample Upgrade</a>
+                </div>
+                <div class="section-image">
+                    <img src="images/br-rabbit-holiday.png" alt="Blue Rabbit Holiday" class="mascot-image">
+                </div>
             </div>
         </div>
     </section>
@@ -268,5 +253,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
-
