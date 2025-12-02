@@ -25,6 +25,9 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    /* Ensure containers are visible by default - JS will handle fade-in */
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* Navigation */
@@ -131,6 +134,10 @@ body {
     justify-content: flex-end;
 }
 
+.section-image.image-left {
+    justify-content: flex-start;
+}
+
 .section-content.content-tight {
     padding-left: 1rem;
 }
@@ -205,9 +212,22 @@ body {
     object-fit: contain;
 }
 
-.mascot-small {
-    max-width: 260px;
+.mascot-size1 {
+    max-width: 360px;
 }
+
+.mascot-size2 {
+    max-width: 280px;
+}
+
+.mascot-size3 {
+    max-width: 280px;
+}
+
+.mascot-size4 {
+    max-width: 320px;
+}
+
 
 /* Card Styles */
 .card {
@@ -255,7 +275,7 @@ body {
 
 /* Content Blocks */
 .content-block {
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
 }
 
 .content-block h3 {
@@ -346,11 +366,13 @@ body {
     border: 1px solid #e5e7eb;
     border-radius: 6px;
     padding: 12px 20px;
-    max-width: fit-content;
+    width: fit-content;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2rem;
-    display: inline-block;
+    display: block;
+    text-align: center;
 }
 
 .highlight-box p {
@@ -549,9 +571,7 @@ body {
         display: block;
     }
 
-    .mascot-image {
-        max-width: 240px;
-    }
+
 
     .before-after-row {
         flex-direction: column;
