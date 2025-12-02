@@ -79,21 +79,23 @@ body {
 /* Hero Section */
 .hero {
     background: linear-gradient(to bottom right, #f8fafc, #eef5ff);
-    padding: 100px 5vw 120px;
+    padding: 100px 0 120px;
     overflow: hidden;
 }
 
 .hero-container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     display: flex;
-    align-items: flex-end;
-    gap: 4rem;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 5vw;
 }
 
 .hero-content {
-    flex: 1;
-    max-width: 600px;
+    flex: 0 1 55%;
+    max-width: 650px;
 }
 
 .hero h1 {
@@ -134,15 +136,15 @@ body {
 }
 
 .hero-visual {
-    flex: 1;
+    flex: 0 0 42%;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
 }
 
 .hero-mascot-desktop {
-    width: 48%;
-    max-width: 500px;
+    width: 100%;
+    max-width: 600px;
     height: auto;
     object-fit: contain;
     display: block;
