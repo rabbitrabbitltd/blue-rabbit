@@ -148,10 +148,10 @@ body {
 
 .hero-mascot {
     position: absolute;
+    left: 44%;
     top: 50%;
-    right: -8%;
     width: min(42vw, 540px);
-    transform: translate(-18%, -50%);
+    transform: translateY(-50%);
     pointer-events: none;
     z-index: 1;
 }
@@ -623,8 +623,7 @@ section {
 @media (min-width: 1400px) {
     .hero-mascot {
         width: 580px;
-        right: -6%;
-        transform: translate(-10%, -50%);
+        left: 45%;
     }
 }
 
