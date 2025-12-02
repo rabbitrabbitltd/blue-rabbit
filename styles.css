@@ -148,7 +148,7 @@ body {
 
 .hero-mascot {
     position: absolute;
-    left: 460px;
+    left: 400px;
     top: 50%;
     width: min(42vw, 540px);
     transform: translateY(-50%);
