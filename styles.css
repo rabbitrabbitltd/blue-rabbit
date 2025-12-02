@@ -125,7 +125,7 @@ body {
 
 .hero-mascot {
     position: absolute;
-    left: 520px; /* 580px (text max-width) - 60px overlap = mascot starts overlapping text area */
+    left: 560px; /* 80px padding + 580px text width - 100px overlap = mascot overlaps text container */
     top: calc(50% + 50px);
     transform: translateY(-50%);
     width: 470px;
@@ -605,7 +605,7 @@ section {
 @media (min-width: 1400px) {
     .hero-mascot {
         width: 550px;
-        left: 600px; /* Adjust for larger mascot on big screens */
+        left: 640px; /* Adjust overlap for larger mascot on big screens */
         top: calc(50% + 50px);
     }
 }
