@@ -30,6 +30,12 @@ body {
     transform: translateY(0);
 }
 
+.container-wide {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 /* Navigation */
 .navbar {
     background-color: var(--white);
@@ -112,9 +118,14 @@ body {
 }
 
 @media (min-width: 768px) {
-    .section-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 3rem;
+    /* Image left, text right */
+    .section-grid.image-left-text-right {
+        grid-template-columns: 37.5% 62.5%;
+    }
+    
+    /* Text left, image right */
+    .section-grid.text-left-image-right {
+        grid-template-columns: 62.5% 37.5%;
     }
 }
 
@@ -122,24 +133,25 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    padding: 0 2rem;
 }
 
 .section-image {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0 2rem;
 }
 
-.section-image.image-right {
-    justify-content: flex-end;
-}
-
+/* Remove left/right alignment - images are centered */
+.section-image.image-right,
 .section-image.image-left {
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .section-content.content-tight {
-    padding-left: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 /* Hero Section */
@@ -414,6 +426,13 @@ body {
     border-radius: 8px;
 }
 
+@media (min-width: 768px) {
+    .image-placeholder {
+        flex: 0 1 450px;
+        height: 350px;
+    }
+}
+
 .image-placeholder.before {
     background: linear-gradient(135deg, #BDBDBD 0%, #9E9E9E 100%);
 }
@@ -422,11 +441,22 @@ body {
     background: linear-gradient(135deg, #64B5F6 0%, var(--blue) 100%);
 }
 
-.arrow {
-    font-size: 24px;
-    color: var(--blue);
-    font-weight: 700;
+.arrow,
+.transform-arrow {
     flex-shrink: 0;
+    display: block;
+    width: calc(1.5rem * 0.7);
+    height: auto;
+    object-fit: contain;
+    background: transparent;
+    align-self: center;
+}
+
+/* Ensure arrow image renders crisply on retina displays */
+.transform-arrow {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;
 }
 
 .caption {
